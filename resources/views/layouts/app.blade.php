@@ -5,6 +5,6 @@
         <div class ="link">
             <a href = "/">Home</a>
             <a href = "/about">About</a>
-            <a href = "/contact">Conact Us</a>
+            <a href = "/contact">Conact us</a>
         </div>
 </div>
