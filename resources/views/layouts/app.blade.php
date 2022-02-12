@@ -7,4 +7,7 @@
             <a href = "/about">About</a>
             <a href = "/contact">Conact us</a>
         </div>
+        <div>
+        @yield("page_content")
+        </div>
 </div>
