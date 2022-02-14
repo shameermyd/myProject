@@ -1,0 +1,2 @@
+welcomeeeeeesssssss
+{{$fruit_name}}
