@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +32,6 @@ Route::get("/about",function(){
 Route::get('/contact',function(){
     return view('contact');
 });
+
+
+Route::get('/posts/{id}','App\Http\Controllers\PostsController@index');

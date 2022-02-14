@@ -1,4 +1,4 @@
-<h1>Heloooo</h1>
+<h1>Helooooiii</h1>
     <div class="content">
         <div class ="link">
             <a href = "/">Home</a>
