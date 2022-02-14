@@ -3,7 +3,13 @@
 @section("page_content")
 <h2>Details:</h2>
 <ul>
-    <li>Address</li>
-    <li>phone no</li>
+    <li>{{$name}}</li>
+    <li>{{$address}}</li>
+    <li><h5>Services:</h5></li>
+    <ol>
+        @foreach ($services as $items)
+        <li>{{$items}}</li>
+        @endforeach
+    </ol>
 </ul>
 @endsection

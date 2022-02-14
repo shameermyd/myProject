@@ -17,8 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about',function () {
-    return view('about');
+Route::get("/about",function(){
+    $data = [
+        "name" => "shazam",
+        "address" => "Home manzil",
+        "services" => ["web develop","digital marketing","web design"]
+    ];
+
+    return view("about",$data);
 });
 
 Route::get('/contact',function(){
