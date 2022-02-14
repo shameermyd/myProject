@@ -16,6 +16,5 @@ class PostsController extends Controller
             "fruit_name" => $fruit
         ];
         return view('posts.index',$data);
-     //echo "welcomeeeeeeeeeezz";
     }
 }

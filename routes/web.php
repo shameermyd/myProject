@@ -34,4 +34,5 @@ Route::get('/contact',function(){
 });
 
 
+//Route::get('/posts','App\Http\Controllers\PostsController@index');
 Route::get('/posts/{id}','App\Http\Controllers\PostsController@index');
