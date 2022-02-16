@@ -19,7 +19,7 @@ function clearText(field)
 <div id="templatemo_site_title_bar_wrapper">
 	<div id="templatemo_site_title_bar">
     	<div id="site_title">
-            <h1><a href="/">ShaZam<span> Shameer & niZam</span></a></h1>
+            <h1><a href="/">ShaZam<span>Sample Project</span></a></h1>
         </div>
         
         <ul id="templatemo_menu">
@@ -28,7 +28,7 @@ function clearText(field)
 			<li><a href="#" target="_blank"><span></span>Flash</a></li>    
             <li><a href="#" target="_blank"><span></span>Gallery</a></li>
             <li><a href="#"><span></span>About</a></li>        
-            <li><a href="/contact" class="{{Request::path() === 'contact' ? 'current' : '' }}"><span></span>Contact</a></li>
+            <li><a href="/contact" class="{{Request::path() === 'contact' ?     'current' : '' }}"><span></span>Contact</a></li>
         </ul>
         
         <div id="search_box">
