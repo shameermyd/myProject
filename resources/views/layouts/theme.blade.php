@@ -203,27 +203,8 @@ function clearText(field)
         <div class="section_w450">
         	
             <h2>Popular Posts</h2>
-            
-            <div class="news_box">
-                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, mauris sit amet molestie congue.</a>
-                <p class="post_info">Posted in <a href="#">Templates</a> by <a href="#">Admin</a> on <strong>October 22, 2048</strong></p>
-            </div>
-            
-            <div class="news_box">
-                <a href="#">Donec convallis dictum diam sit amet tristique. Pellentesque pharetra dignissim arcu eget tempor.</a>
-                <p class="post_info">Posted in <a href="#">General</a> by <a href="#">Admin</a> on <strong>October 21, 2048</strong></p>
-            </div>
-            
-            <div class="news_box">
-                <a href="#">Nulla vitae erat id sapien aliquet accumsan. Nullam vel ante in lectus venenatis interdum ac pretium nisi.</a>
-                <p class="post_info">Posted in <a href="#">Gallery</a> by <a href="#">Admin</a> on <strong>October 20, 2048</strong></p>
-            </div>
-            
-            <div class="news_box">
-                <a href="#">Mauris semper dui non risus suscipit bibendum. Nam purus diam, feugiat nec dictum in, tempus sit amet ante. </a>
-                <p class="post_info">Posted in <a href="#">Templates</a> by <a href="#">Admin</a> on <strong>October 19, 2048</strong></p>
-            </div>
-            
+            @yield("post")
+                        
         </div>
     
     	<div class="cleaner"></div>
