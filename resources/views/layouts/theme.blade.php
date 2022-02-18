@@ -5,8 +5,9 @@
 <title>ShaZam - Test project</title>
 <meta name="keywords" content="free css templates, free website templates, simple blue, light gray" />
 <meta name="description" content="Simple Blue is a free CSS template from www.templatemo.com" />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+<link href="/templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="/css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">    
 <script language="javascript" type="text/javascript">
 function clearText(field)
 {
@@ -24,7 +25,7 @@ function clearText(field)
         
         <ul id="templatemo_menu">
             <li><a href="/" class="{{Request::path() === '/' ? 'current' : '' }}"><span></span>Home</a></li>
-            <li><a href="#" target="_blank"><span></span>CSS</a></li>
+            <li><a href="/articles" class="{{Request::path() === 'article' ? 'current' : ''}}"><span></span>Articles</a></li>
 			<li><a href="#" target="_blank"><span></span>Flash</a></li>    
             <li><a href="#" target="_blank"><span></span>Gallery</a></li>
             <li><a href="#"><span></span>About</a></li>        
