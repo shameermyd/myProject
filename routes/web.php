@@ -43,4 +43,5 @@ Route::post("/articles","App\Http\Controllers\ArticlesController@store");
 Route::get("/articles/{article}","App\Http\Controllers\ArticlesController@show");
 Route::get("/articles/{article}/edit","App\Http\Controllers\ArticlesController@edit");
 Route::put("/articles/{article}","App\Http\Controllers\ArticlesController@update");
+Route::delete("/articles/{article}","App\Http\Controllers\ArticlesController@destroy");
 

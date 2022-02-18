@@ -95,5 +95,8 @@ class ArticlesController extends Controller
     public function destroy($id)
     {
         //
+       $article = Articles::find($id);
+       $article->delete();
+       return redirect("/articles");
     }
 }
