@@ -65,6 +65,8 @@ class ArticlesController extends Controller
     public function edit($id)
     {
         //
+        $article = Articles::find($id);
+        return view("articles.edit",["articleEdit" => $article]);
     }
 
     /**
@@ -77,6 +79,11 @@ class ArticlesController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $article = Articles::find($id);
+        $article->title = request("title");
+        $article->body = request("body");
+        $article->save();
+        return redirect("/articles");
     }
 
     /**

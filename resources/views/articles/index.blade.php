@@ -7,5 +7,6 @@
         <h3><a href="articles/{{$articles->id}}">{{$articles->title}}</a></h3>
         <p class="post_info">{{$articles->body}}<strong> From Database</strong></p>
     </div>
+    <a class="btn btn-success" href="articles/{{$articles->id}}/edit">Edit</a>
 @endforeach    
 @endsection
