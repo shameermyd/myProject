@@ -39,3 +39,4 @@ Route::get('/posts/{id}','App\Http\Controllers\PostsController@index');
 
 Route::get("/articles","App\Http\Controllers\ArticlesController@index");
 Route::get("/articles/create","App\Http\Controllers\ArticlesController@create");
+Route::post("/articles","App\Http\Controllers\ArticlesController@store");

@@ -35,8 +35,12 @@ class ArticlesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {    
+        $article = new Articles();
+        $article->title = request('title');
+        $article->body = request('body');
+        $article->save();
+        return redirect("/articles");
     }
 
     /**
