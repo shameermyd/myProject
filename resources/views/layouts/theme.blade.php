@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Simple Blue - free website template</title>
+<title>ShaZam - Test project</title>
 <meta name="keywords" content="free css templates, free website templates, simple blue, light gray" />
 <meta name="description" content="Simple Blue is a free CSS template from www.templatemo.com" />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
@@ -31,187 +31,25 @@ function clearText(field)
             <li><a href="/contact" class="{{Request::path() === 'contact' ?     'current' : '' }}"><span></span>Contact</a></li>
         </ul>
         
-        <div id="search_box">
-            <form action="#" method="get">
-                <input type="text" value="Enter keyword here..." name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
-                <input type="submit" name="Search" value="Search" alt="Search" id="searchbutton" title="Search" />
-            </form>
-       </div>
+        
        
 	</div> <!-- end of templatemo_site_title_bar -->        
        
 </div> <!-- end of templatemo_site_title_bar_wrapper -->
 
-<div id="templatemo_banner_wrapper_outter">
-<div id="templatemo_banner_wrapper">
 	
-    <div id="templatemo_banner">
-    
-    <div id="templatemo_banner_slider">
-    <!-- start of the slider -->
-    
-    <div id="one" class="contentslider">
-            <div class="cs_wrapper">
-                <div class="cs_slider">
-                
-                    <div class="cs_article">
-                        <div class="cs_article_inner">
-                             <div class="img_frame"><img src="images/templatemo_image_04.jpg" alt="Image Title 1" /></div>
-                              <h2>Lorem ipsum dolor sit</h2>
-                              <p>Vivamus vitae nibh eu sem malesuada rutrum et sit amet magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquam velit a magna sodales quis elementum ipsum auctor. Ut at metus leo, et dictum sem.</p>
-                              <a href="#">More <span>&raquo;</span></a>
-                        </div>                               
-                    </div><!-- End cs_article -->
-                    
-                    <div class="cs_article">
-                        <div class="cs_article_inner">
-                            <div class="img_frame"><img src="images/templatemo_image_03.jpg" alt="Image Title 2" /></div>
-                            <h2>Mauris aliquam ultrices lacus</h2>
-                            <p>Aenean fringilla vehicula felis, eu blandit tortor aliquam et. Nunc sed diam sed dui iaculis pharetra eu sed elit. Nunc arcu sapien, pellentesque at posuere nec, tincidunt dignissim enim. Ut sem mauris, aliquet ut sagittis vitae, condimentum eget augue. Donec sapien neque, egestas vitae auctor quis, pellentesque at augue.</p>
-                            <a href="#">More <span>&raquo;</span></a>
-                        
-                        </div>
-                    </div><!-- End cs_article -->
-                    
-                    <div class="cs_article">
-                        <div class="cs_article_inner">
-                        <div class="img_frame"><img src="images/templatemo_image_05.jpg" alt="Image Title 3" /></div>
-                        <h2>Nullam pharetra adipiscing diam</h2>
-                        <p>Praesent at dui augue. Proin consectetur elementum sem, in blandit urna porta sed. Sed tortor ipsum, scelerisque vel lobortis aliquam, bibendum sit amet neque. In id erat in quam bibendum lacinia. Curabitur imperdiet viverra scelerisque. Phasellus quis egestas risus.</p>
-                        <a href="#">More <span>&raquo;</span></a>
-                        
-                        </div>
-                    </div><!-- End cs_article -->
-                    
-                    <div class="cs_article">
-                    <div class="cs_article_inner">
-                        <div class="img_frame"><img src="images/templatemo_image_06.jpg" alt="Image Title 4" /></div>
-                        <h2>Pellentesque ut iaculis enim</h2>
-                        <p>Sed id tortor vitae nisi consectetur tempus. Pellentesque tellus est, adipiscing id porttitor vitae, vestibulum id neque. Aliquam tellus dui, vehicula sed placerat sed, scelerisque ultricies tortor. Donec ornare blandit erat pellentesque molestie. Suspendisse potenti. </p>
-                        <a href="#">More <span>&raquo;</span></a>
-                    </div>
-                    </div><!-- End cs_article -->
-              
-                </div><!-- End cs_slider -->
-            </div><!-- End cs_wrapper -->
-        </div><!-- End contentslider -->
-        
-        <!-- Site JavaScript -->
-        <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.ennui.contentslider.js"></script>
-        <script type="text/javascript">
-            $(function() {
-            $('#one').ContentSlider({
-            width : '960px',
-            height : '250px',
-          	speed : 400,
-            easing : 'easeOutSine'
-            });
-            });
-        </script>
-        <script src="js/jquery.chili-2.2.js" type="text/javascript"></script>
-        <script src="js/chili/recipes.js" type="text/javascript"></script>
-        <div class="cleaner"></div>
-  
-  		<!-- end of the slider -->  
-  
-    
-   	  </div> <!-- end of templatemo_popular_posts -->
-    
-    </div> <!-- end of templatemo_banner -->
+
 
 </div> <!-- end of templatemo_banner_wrapper -->
 </div> <!-- end of templatemo_banner_wrapper_outter -->
 
 <div id="templatemo_content">
 	
-    <div id="twitter_section">
-    	
-        <p>"Sed id tortor vitae nisi consectetur tempus. Pellentesque tellus est, adipiscing id porttitor vitae, vestibulum id neque."</p>
-      <div class="followme"><a href="#"></a></div>
+@yield("content")
+    
+                
         
-        <div class="cleaner"></div>
-    </div>
-    
-    <div class="section_w940">
-    
-        <div class="box margin_r_20 box_border">
 
-            <h2>Quality Product</h2>
-    <div class="box_image_wrapper">
-              <img src="images/folder.png" alt="product 1" />
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec dictum tortor. </p>
-            
-            <div class="cleaner_h10"></div>
-            <div class="button_01"><a href="#">More</a></div>
-                
-        </div>
-        
-        <div class="box margin_r_20 box_border">
-
-            <h2>Special Service</h2>
-            <div class="box_image_wrapper">
-              <img src="images/paint.png" alt="product 1" />
-            </div>
-            <p>Proin eleifend quam eu purus aliquet scelerisque. Sed non nibh a urna tristique vestibulum.</p>
-            
-            <div class="cleaner_h10"></div>            
-            <div class="button_01"><a href="#">More</a></div>
-                
-        </div>
-        
-        <div class="box">
-            <h2>Customer Support</h2>
-            <div class="box_image_wrapper">
-              <img src="images/safe.png" alt="product 1" />
-            </div>
-            <p>Morbi suscipit, nisl eget porttitor hendrerit, arcu sapien cursus enim, id luctus felis metus ac urna.</p>
-            
-            <div class="cleaner_h10"></div>            
-            <div class="button_01"><a href="#">More</a></div>
-                
-        </div>
-    
-    	<div class="cleaner"></div>
-    </div>
-    
-    <div class="cleaner_h60"></div>
-    
-    <div class="section_w940">
-    
-    	<div class="section_w450 margin_r_40">
-        
-        	<h2>About Us</h2>
-            <p>Simple Blue is a free web template  brought to you by <a href="http://www.templatemo.com" target="_parent">TemplateMo.com</a> website. You may use this template in your websites. Credit goes to <a href="http://www.smashingmagazine.com" target="_blank">Smashing Magazine</a> for icons used in this template. Morbi sed nulla ac est cursus suscipit eu ac lectus. Curabitur  ullamcorper nibh nisi, sed eleifend dolor. Pellentesque adipiscing  sollicitudin sapien nec aliquet.</p>
-          <div class="button_01"><a href="#">More</a></div>
-            
-            
-            <div class="cleaner_h40"></div>
-            
-            <h2>Testimonial</h2>
-            
-			<p class="testimonial">" Vestibulum iaculis ultricies tincidunt. Donec id metus ante. Etiam sodales aliquam orci nec ultricies. Cras tellus odio, facilisis non dapibus ac, convallis id diam. Aenean mattis imperdiet vulputate. Sed in odio a urna rutrum vestibulum. Nunc tincidunt tincidunt posuere. "</p>
-            
-            <div class="cleaner"></div>
-            
-            <a href="http://www.templatemo.com" target="_blank">www.templatemo.com</a>
-            
-        </div>
-        
-        <div class="section_w450">
-        	
-            <h2>Popular Posts</h2>
-            @yield("post")
-                        
-        </div>
-    
-    	<div class="cleaner"></div>
-    </div>
-    
-    
-    <div class="cleaner"></div>
 </div> <!-- end of templatemo_content -->
  
 
