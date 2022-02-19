@@ -36,7 +36,12 @@ class ArticlesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {    
+    {   
+        request()-> validate([
+            'title' => ['required', 'min:3'],
+            'body' => 'required',
+        ]);
+
         $article = new Articles();
         $article->title = request('title');
         $article->body = request('body');
